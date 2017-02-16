@@ -45,6 +45,11 @@ if __name__ == "__main__":
     englishgirl = n.getnames(englishgirlfilelist)
     englishboy = n.getnames(englishboyfilelist)
 
+    # this below is for mongo database inserts
+    # if mongo is not installed, please consider just printing the variables 
+    # print englishboy, indiangirl
+    # alternatively you can pass them to another existing function to consume that values
+    
     dbconn.insertintodb("arabicgirl", arabicgirl)
     dbconn.insertintodb("arabicboy", arabicboy)
     dbconn.insertintodb("indiangirl", indiangirl)
@@ -57,4 +62,4 @@ if __name__ == "__main__":
     dbconn.insertintodb("englishboy", englishboy)
     dbconn.insertintodb("australiangirl", australiangirl)
     dbconn.insertintodb("australianboy", australianboy)
-    print "done???"
+ 
