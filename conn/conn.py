@@ -5,6 +5,7 @@ class conn:
         client = MongoClient()
         db = client.listofnames
         db.names.insert_one({
-            types : names
+            'type' : types,
+            'name' : names
         })
 
