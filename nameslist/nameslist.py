@@ -15,7 +15,9 @@ class nameslist:
                 for all in row.findNext('td'):
                     for a1 in all.findNext('td'):
                         allnames.append(a1.text)
-
+        
+        allnames = [x for x in allnames if not (re.findall(r'[+-]?\d+', x))]
+        allnames.sort()
         return allnames
 
 
