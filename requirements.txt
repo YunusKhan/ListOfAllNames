@@ -1,0 +1,4 @@
+pymongo
+BeautifulSoup
+lxml 
+urllib2

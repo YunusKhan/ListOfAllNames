@@ -1,0 +1,1 @@
+from staticurl import staticurl
